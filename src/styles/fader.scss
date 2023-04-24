@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lato:wght@200;300;400;700&family=Lora&family=Open+Sans:wght@300;400;500;600&family=Pacifico&family=Poppins:wght@300&display=swap');
+
+
+
+.fader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: -300px;
+    left: -750px;
+    width: 500px;
+
+
+    .faderContainer {
+ 
+        position: absolute;
+        font-family: 'Pacifico';
+        color: rgb(243, 251, 160);
+        
+
+        .title{
+            font-family: 'Open Sans';
+            letter-spacing: 4px;
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-family: 'Lato';
+        }
+
+        p{
+            font-family: 'Lato';
+            line-height: 40px;
+            font-size: 30px;
+            font-weight: 200;
+            text-align: justify ;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        ul{
+            list-style: none;
+            font-size: 30px;
+            font-weight: 100;
+            color: rgb(243, 251, 160);
+            width: 60%;
+            font-family: 'Lato';
+        }
+
+        li{
+            margin-bottom: 25px;
+            font-size: 25px;
+            font-family: 'Lato';
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+
+    }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lato:wght@300;400;700&family=Lora&family=Open+Sans:wght@300;400;500;600&family=Pacifico&family=Poppins:wght@300&display=swap');
+
+
+
+.menu {
+    width: 300px;
+    height: calc(100vh - 70px);
+    background-color: transparent;
+    position: fixed;
+    top: 70px;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    
+
+    &.active {
+        right: 0px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+        width: 60%;
+
+        li{
+            margin-bottom: 25px;
+            font-size: 25px;
+            font-family: 'Lato';
+            font-weight: 200;
+            letter-spacing: 5px;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 400;
+            }
+        }
+    }
+}
