@@ -9,8 +9,8 @@ const Menu = ({menuOpen, setMenuOpen}) => {
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
         <ul>
-            {data.map((d) => (
-             <Link to={`/planet/${d.name}`} className='link'>
+            {data.map((d, index) => (
+             <Link to={`/planet/${d.name}`} className='link' key={index}>
              <li onClick={() => setMenuOpen(false)}>
                  {d.name}
             </li>

@@ -18,21 +18,21 @@ import UranusBackground from "./pages/Uranus/Background.jsx"
 
 
 
+
 function App() {
 
 
 
   const [menuOpen, setMenuOpen] = useState(false)
-
-
-
   return (
     <div className="app">
-     <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <BrowserRouter>
 
+      <BrowserRouter>
+      
+     
       <Routes>
-        <Route path="/" element={<Enter />} />
+      <Route path="/" element={<Enter />} />
+
        <Route path="/home" element={ <AppSS />} />
         <Route path="/planet/Earth"  element={<Background />}/>
         <Route path="/planet/Saturn"  element={<BackgroundSaturn />}/>
@@ -46,7 +46,7 @@ function App() {
       <Route path="/loading"  element={<Loading />}/> 
       </Routes>
 
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+     
   </BrowserRouter>
     
     </div>
